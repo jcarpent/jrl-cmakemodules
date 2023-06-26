@@ -1,4 +1,5 @@
-find_library(OpenMP_CXX_LIBRARY NAMES omp)
+find_library(OpenMP_CXX_LIBRARY NAMES "iomp5" "iomp5md" "omp" "libiomp5"
+                                      "libiomp5md" "libomp")
 
 find_path(OpenMP_CXX_INCLUDE_DIR omp.h)
 
